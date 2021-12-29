@@ -1,0 +1,448 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    position: relative;
+}
+body::after {
+    content: '';
+    display: block;
+    height: 200px; /* Set same as footer's height */
+  }
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+    
+}
+h2{
+    border-bottom: 2px solid var(--theme);
+    width: 20%;
+    margin: 0px auto;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 800;
+    color: #333333;
+    position: relative;
+    text-align: center;
+}
+h2::after{
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 30%;
+    width: 35%;
+    height: 1px;
+    background-color: var(--theme);
+}
+h2::before{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 30%;
+    width: 35%;
+    height: 1px;
+    background-color: var(--theme);
+}
+section{
+    padding: 80px 0px;
+    margin-bottom: 200px;
+
+}
+input{
+    border: 1px solid #333333;
+    border-radius: 4px;
+    height: 30px;
+    padding: 5px;
+}
+input:focus{
+    border: 1px solid var(--theme) !important;
+    outline: transparent;
+}
+/*Vars*/
+:root{
+    --theme: #00B0FF;
+}
+
+/*Styles*/
+
+/*Header*/
+
+header{
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    background-color: #666;
+    color: white;
+    z-index: 2;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+}
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+     color: var(--theme);
+    font-size: 24px;
+    font-weight: 800;
+}
+nav .navMenu{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navMenu a{
+    color: white;
+    font-weight: 500;
+    transition: all 0.2s;
+
+}
+.navMenu a:hover{
+    color: var(--theme);
+}
+
+/*Landing*/
+.landing{
+   
+    color: black;
+    height: 91.5vh;
+    background-image: url('assets/img/landing/landing.jpg');
+    background-size: cover;
+    background-position:center;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 114%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:-20px;
+    text-align: center;
+}
+.landing p{
+    font-size: 24px;
+    color: white;
+    margin-top: 20px;
+
+}
+.landing p:first-of-type{
+    font-weight: 600;
+}
+.landing h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--theme);
+
+}
+/*about*/
+.about{
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+.about .text{
+    height: 100%;
+    width: 50%;
+    text-align: left;
+    padding: 30px;
+}
+.text .hello{
+    font-size: 40px;
+    padding: 4px;  
+}
+.text .starter{
+    height: 32px;
+    width: 6px;
+    background-color: var(--theme);
+    display: inline-block; 
+    margin-right: 10px;   
+}
+.text .mainText{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 1.6;
+    padding-right: 10%;
+    border-bottom: 1px dashed black;
+}
+.text .info{
+    display: flex;
+}
+
+.info p{
+    color: #555;
+    margin: 40px 0;
+    margin-right: 40px;
+
+}
+.info .label{
+    font-weight: bold;
+    color: black;
+}
+.about .buttons{
+    display: flex;
+    justify-content: flex-start;
+}
+ button{
+    background-color: var(--theme);
+    border-radius: 8px;
+    padding: 15px 20px;
+    color: white;
+    transition: all 02s;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 16px;
+    border: 2px solid transparent;
+
+}
+ button:hover{
+    background-color: #0077ff;
+}
+.about .photo{
+    height: 100%;
+    width: 50%;
+    padding-left: 10%;
+    position: relative;
+  
+
+}
+.about .base{
+    height: 50%;
+    width: 300px;
+    position: absolute;
+    top: 100px;
+    left: 47%;
+    border: 10px solid #555;
+    border-radius: 8px;
+}
+.about .imgHolder{
+    height: 55%;
+    width: 320px;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    background-image: url('assets/img/about/profile.jpg');
+    border-radius: 8px;
+    overflow: hidden;
+}
+.about .overflow{
+    position: absolute;
+    top: 100%;
+    transition: all 1s;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.overflow i{
+    margin-right: 20px;
+    color: var(--theme);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+i:hover{
+    transform: scale(1.2);
+}
+.about .imgHolder:hover  .overflow{
+    top: 0;
+}
+
+/*Our Services*/
+.service{ 
+    width: 100%;
+    background-color: #F1F1F1;
+    text-align: center;
+}
+
+.service .container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.service .item
+{
+    height: 180px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    transition:  0.5s all;
+}
+.service .item i{
+    color: var(--theme);
+    font-size: 40px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+.service .item:hover{
+    background-color: white;
+    box-shadow: 3px 2px 10px #333333;
+}
+.service .item p{
+    margin-top: 2rem;
+}
+
+
+/*Portfolio*/
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.portfolio .itemOverlay{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    transition: all 0.5s;
+    position: relative;
+}
+.portfolio .item{
+    width: 30%;
+    height: 240px;
+    margin-top: 40px;
+    background-image: url('assets/img/portfolio/1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.portfolio .item:nth-child(2){
+    background-image: url('assets/img/portfolio/2.jpg');
+}
+.portfolio .item:nth-child(3){
+    background-image: url('assets/img/portfolio/3.jpg');
+}
+.portfolio .item:nth-child(4){
+    background-image: url('assets/img/portfolio/4.jpg');
+}
+.portfolio .item:nth-child(5){
+    background-image: url('assets/img/portfolio/5.jpg');
+}
+.portfolio .item:nth-child(6){
+    background-image: url('assets/img/portfolio/6.jpg');
+}
+.portfolio .item:hover .itemOverlay{
+    opacity: 0.7;
+}
+.itemOverlay i{
+    font-size: 20px;
+    color: var(--theme);
+    bottom: 5px;
+    right: 10px;
+    position: absolute;
+}
+
+/*Form*/
+form{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+form input{ 
+    width: 42%;
+    margin:10px 22px;
+}
+form .subject{
+    width: 90%;
+    margin-top: 20px;
+}
+form textarea{
+    margin-top: 20px;
+    width: 91%;
+    margin: 20px ;
+    border-radius: 4px;
+    padding: 4px;
+    border: 1px solid ;
+}
+textarea:focus{
+    outline: transparent;
+    border: 1px solid var(--theme);
+}
+form button{
+    margin-left: 20px;
+}
+
+
+/*footer*/
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background:#333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  footer i{
+      margin-right: 30px;
+      color: white;
+  }
+  footer .icons{
+      margin-bottom: 20px;
+  }
+  footer p span{
+      color: var(--theme);
+  }
