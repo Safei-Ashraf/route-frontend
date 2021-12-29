@@ -1,0 +1,218 @@
+/*General Rules*/
+body{
+    font-family: "Alegreya Sans", sans-serif, monospace;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+i{
+    color: #8e7754;
+    border: 1px solid #8e7754;
+    padding: 4px;
+    border-radius: 9999px;
+    margin-right: 4px;
+}
+h1, h2, h3{
+    font-family: serif;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
+ul{
+    list-style: none;
+}
+section{
+    width: 90%;
+    margin: auto auto;
+    margin-top: 40px;
+    color: #686868;
+}
+.content{
+    text-align: center;
+    padding: 10px;
+}
+
+/*Section #1*/
+
+.whoAreWe .imgHolder{
+    width: 45%;
+    float: left;
+}
+.imgHolder img{
+    width: 100%;
+}
+.whoAreWe .content{
+    margin-left: 40px;
+    margin-top: 40px;
+    float: left;
+    width: 40%;
+}
+.content ul{
+    list-style: none;
+    text-align: left;
+    
+}
+.content li{
+    margin-top: 50px;
+}
+.content p{
+    margin-top: 40px;
+    line-height: 2;
+}
+
+/*Section #2*/
+.ourLocation .content{
+    float: left;
+    width: 45%;
+
+}
+.ourLocation .imgHolder{
+    float: left;
+    width: 45%;
+}
+
+/*Section #3*/
+.ourBaking >p{
+    text-align: center;
+    
+}
+.products{
+    float: left;
+    background: #999;
+     width: 33.33%;
+}
+
+.productImage{
+    width: 80%;
+    margin: auto;
+    height: 200px;
+}
+#img1{
+    background-image: url('images/clem-onojeghuo-206832-600x500.jpg');
+    
+}
+#img2{
+    background-image: url('images/stas-ovsky-123540-600x500.jpg');
+  
+}
+#img3{
+    background-image: url('images/ben-garratt-134774-600x500.jpg');
+}
+#img1,#img2,#img3{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.products p{
+    width: 90%;
+    margin-top: 0;
+    line-height: 1.6;
+    text-align: center;
+    margin: auto auto;
+    padding-bottom: 4px;
+
+}
+.products h3{
+    text-align: center;
+    width: 90%;
+}
+
+
+/*Section #4*/
+.contactInfo .content{
+    float: left;
+    width: 50%;
+}
+.contactInfo  h3{
+    font-weight: normal;
+}
+.title, ul, li{
+    text-align: left;
+}
+.contactInfo  ul{
+    margin-left: -40px;
+}
+.contactInfo li{
+    margin-top: 30px;
+}
+.map{
+    width: 45%;
+    float: left;
+}
+
+/*Section #5*/
+footer{
+    background-color: #403D38;
+    padding: 4px;
+width: 100%;
+
+}
+.info{
+    overflow: auto;
+    width: 99%;
+    margin-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #969696;
+}
+.info h2{
+    color: white;
+}
+.info>div{
+    width: 25%;
+    list-style: none;
+    float: left;
+    line-height: 2;
+}
+.info li{
+    margin-top: 16px;
+    border-bottom:1px solid #303030;
+    padding-bottom: 4px;
+}
+.contactDetails div{
+    margin-top: 15px;
+    padding: 6.4px 10px;
+    border-bottom: 1px solid grey;
+}
+.info i{
+    border: none;
+    color: #969696;
+    font-size: 24px;
+}
+.contactDetails i{
+    font-size: 16px;
+}
+.socialMedia{
+    margin: auto auto;
+    text-align: center;
+    background:#353330;
+    padding :10px;
+    color: white;
+
+}
+.socialMedia i{
+    padding: 4px;
+    border: none;
+}
+
+
+
+@media screen and (max-width: 720px) {
+    .whoAreWe .imgHolder,.whoAreWe .content,.ourLocation .content,.ourLocation .imgHolder,.products,.contactInfo .content{
+        width: 90%;
+        float: none;
+        margin: auto auto;
+    }
+    .map iframe{
+        width: 85vw;
+    }
+    .info .aboutUs,.info .whyWe, .info .openingHours, .info .contactDetails{
+        width: 50%;
+        line-height: normal;
+        
+    }
+    
+}
